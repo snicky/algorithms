@@ -12,15 +12,14 @@ def pairs_of_cubes k
   end
 
   solution = []
-  
+
   sum_pairs.each do |_, pairs|
-    last_index = pairs.length - 1
-    (0..last_index).each do |i|
-      (i+1..last_index).each do |j|
+    (0...pairs.length).each do |i|
+      (i+1...pairs.length).each do |j|
         solution << [pairs[i], pairs[j]]
       end
     end
   end
 
-  return solution
+  solution
 end

@@ -1,4 +1,4 @@
-# Find common elements in two arrays in O(n) time and O(1) space.
+# Find common elements in two sorted arrays in O(n) time and O(1) space.
 
 def common_elements a, b
   common = []
